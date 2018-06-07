@@ -1,0 +1,230 @@
+[ 2017-12-15T08:34:35+08:00 ] 127.0.0.1 /six/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016570s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.1179s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.173300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.173415s ]
+
+[ 2017-12-15T08:34:37+08:00 ] 127.0.0.1 /six/index.php/Home/Goods/goodsList/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0719s ]
+SQL: SELECT * FROM `goods` WHERE ( cat_id in (1,4,19,20,7,17,18) )  [ RunTime:0.0733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000468s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000874s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2017-12-15T08:34:40+08:00 ] 127.0.0.1 /six/index.php/Home/Goods/goodsList/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods` WHERE ( cat_id in (3,11,12) )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2017-12-15T08:34:43+08:00 ] 127.0.0.1 /six/index.php/Home/Index/product/goods_id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `goods` WHERE ( goods_id='33' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `goods_attr` [ RunTime:0.0440s ]
+SQL: SELECT g.goods_attr_id,g.goods_id,g.attr_id,g.attr_values,g.price,a.attr_type,a.attr_name FROM goods_attr g INNER JOIN attribute a on g.attr_id=a.attr_id  WHERE ( g.goods_id='33' )  [ RunTime:0.0603s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000547s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002239s ]
+
+[ 2017-12-15T08:35:45+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=45&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A14%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-12-15T08:35:47+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=45&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A14%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-12-15T08:35:47+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=45&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A14%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+
+[ 2017-12-15T08:35:47+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=45&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A14%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-12-15T08:35:51+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-12-15T08:35:51+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+
+[ 2017-12-15T08:35:51+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-12-15T08:35:52+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-12-15T08:35:52+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-12-15T08:35:52+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+
+[ 2017-12-15T08:35:52+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=1&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002824s ]
+
+[ 2017-12-15T08:35:55+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=33&num=2&goods_attr_id%5B%5D=44&goods_attr_id%5B%5D=47&goods_values%5B%5D=%E5%B1%8F%E5%B9%95%E5%A4%A7%E5%B0%8F%EF%BC%9A12%E5%AF%B8&goods_values%5B%5D=%E5%86%85%E5%AD%98%EF%BC%9A32G
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-12-15T08:36:08+08:00 ] 127.0.0.1 /six/index.php/Home/Index/product/goods_id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `goods` WHERE ( goods_id='10' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `goods_attr` [ RunTime:0.0052s ]
+SQL: SELECT g.goods_attr_id,g.goods_id,g.attr_id,g.attr_values,g.price,a.attr_type,a.attr_name FROM goods_attr g INNER JOIN attribute a on g.attr_id=a.attr_id  WHERE ( g.goods_id='10' )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001827s ]
+
+[ 2017-12-15T08:36:10+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=10&num=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-12-15T08:36:10+08:00 ] 127.0.0.1 /six/index.php/Home/Cart/cartAdd?goods_id=10&num=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+
