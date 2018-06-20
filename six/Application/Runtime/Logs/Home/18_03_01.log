@@ -1,9 +1,0 @@
-[ 2018-03-01T18:13:59+08:00 ] 127.0.0.1 /htdocs/six/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001609s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
-ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
-
