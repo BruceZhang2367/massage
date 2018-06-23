@@ -22,14 +22,24 @@ public function db()
     $val="";
     $bian="";
     foreach ($values as $k => $v) {
-    	$val.=$k.',';
+    	$val.="`".$k."`".',';
     	$bian.="'".$v."'".',';
     }
     $vals=rtrim($val,',');
     $binss=rtrim($bian,',');
  	$sql="insert into $table ($vals) values($binss)";
+    
  	$gei=$pdo->exec($sql);
  	return $gei;
+ }
+
+ public function select($table,$where = 1)
+ {
+ 	$pdo = $this->db();
+ 	$sql = 'select * from '.$table.' where '.$where;
+ 	$res = $pdo->query($sql)->fetchAll(\PDO::FETCH_ASSOC);
+ 	return $res;
+
  }
  
 }

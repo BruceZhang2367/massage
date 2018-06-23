@@ -1,6 +1,8 @@
 <?php
 	header("Content-type: text/html; charset=utf-8");
 
+    date_default_timezone_set('PRC');
+    
     define ('APP_HOST',$_SERVER['HTTP_HOST']);
 
 	$controller=isset($_GET['c'])? ucfirst($_GET['c']):'Back';//控制器

@@ -2,8 +2,22 @@
 namespace Controller;
 class Controller
 {
+    public $assign;
+
 	public function display($file)
 	{
-     include 'View/'.$file.'.php';
+	   if ($this->assign) {
+	   	 extract($this->assign);
+         include 'View/'.$file.'.php';
+	   } else {
+	   	 include 'View/'.$file.'.php';
+	   }
+       
 	}
+    
+    public function assign($key,$value)
+    {
+        $this->assign[$key] = $value;
+    }
+
 }
